@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:text="Version : 3.0"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:src="@drawable/fake"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+
+        <Button
+            android:id="@+id/btn_create"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_rounded_primary"
+            android:textColor="@android:color/white"
+            android:elevation="5dp"
+            android:text="Create"/>
+        <Button
+            android:id="@+id/btn_saved"
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_rounded_primary"
+            android:textColor="@android:color/white"
+            android:elevation="5dp"
+            android:text="Saved"/>
+
+        <Button
+            android:id="@+id/btn_more_app"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_rounded_primary"
+            android:elevation="5dp"
+            android:text="More App"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_rate_us"
+            android:visibility="visible"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_rounded_primary"
+            android:textColor="@android:color/white"
+            android:elevation="5dp"
+            android:text="Rate Us"/>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/ad_banner_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
+</layout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FakePostCeator</string>
+    <string name="likes_reactions"><![CDATA[Likes & Reactions]]></string>
+    <string name="save_share"><![CDATA[Save & Share]]></string>
+    <string name="app_admob_id">ca-app-pub-9280699482513671~1538784161</string>
+    <string name="ad_banner_id">ca-app-pub-9280699482513671/4568272181</string>
+    <string name="ad_interstial_id">ca-app-pub-9280699482513671/9629027174</string>
+</resources>

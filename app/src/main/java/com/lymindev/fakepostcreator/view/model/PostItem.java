@@ -1,12 +1,17 @@
 package com.lymindev.fakepostcreator.view.model;
 
 import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
 public class PostItem extends RealmObject {
+
+    @PrimaryKey
     private int id;
     private String type;
     private String fullname;
     private byte[] profile;
+    private boolean isImagePost;
+    private byte[] photoPost;
     private String likes;
     private String comments;
     private String shares;
@@ -27,6 +32,21 @@ public class PostItem extends RealmObject {
     }
 
 
+    public boolean isImagePost() {
+        return isImagePost;
+    }
+
+    public void setImagePost(boolean imagePost) {
+        isImagePost = imagePost;
+    }
+
+    public byte[] getPhotoPost() {
+        return photoPost;
+    }
+
+    public void setPhotoPost(byte[] photoPost) {
+        this.photoPost = photoPost;
+    }
 
     public void setShares(String shares) {
         this.shares = shares;

@@ -3,6 +3,11 @@
     <string name="likes_reactions"><![CDATA[Likes & Reactions]]></string>
     <string name="save_share"><![CDATA[Save & Share]]></string>
     <string name="app_admob_id">ca-app-pub-9280699482513671~1538784161</string>
-    <string name="ad_banner_id">ca-app-pub-9280699482513671/4568272181</string>
+    <string name="ad_banner_id">ca-app-pub-9280699482513671/7788374033</string>
     <string name="ad_interstial_id">ca-app-pub-9280699482513671/9629027174</string>
+    <string name="save_share_now"><![CDATA[Save & Share now]]></string>
+    <string name="share_now">Share to friends</string>
+    <string name="title_activity_splash_screen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

@@ -13,20 +13,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.SavedActivity"></activity>
-        <activity android:name=".view.ReviewFacebookPostActivity" />
-        <activity android:name=".view.FacebookPostActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".view.activities.create.IncomingPhoneCallActivity"></activity>
+        <activity
+            android:name=".view.SplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.activities.create.FbPostActivity" />
+        <activity android:name=".view.activities.MenuListActivity" />
+        <activity android:name=".view.SavedActivity" />
+        <activity android:name=".view.ReviewFacebookPostActivity" />
+        <activity android:name=".view.FacebookPostActivity" />
+        <activity android:name=".MainActivity"></activity>
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="@string/app_admob_id"/>
+            android:value="@string/app_admob_id" />
     </application>
 
 </manifest>

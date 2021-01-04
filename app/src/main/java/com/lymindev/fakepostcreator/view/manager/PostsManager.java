@@ -10,26 +10,14 @@ public class PostsManager {
 
     public void clearAllData() {
         Realm realm = Realm.getDefaultInstance();
-        realm.executeTransaction(new Realm.Transaction() {
-            @Override
-            public void execute(Realm realm) {
-                realm.deleteAll();
-            }
-        });
+        realm.executeTransaction(realm1 -> realm1.deleteAll());
     }
 
     public void addPostData(PostItem item) {
         Realm realm = Realm.getDefaultInstance();
-        realm.executeTransaction(new Realm.Transaction() {
-            @Override
-            public void execute(Realm realm) {
-                realm.insertOrUpdate(item);
-            }
-        });
+        realm.executeTransaction(realm1 -> realm1.insertOrUpdate(item));
         realm.close();
-
     }
-
     public PostItem getPostData(int id) {
         return Realm.getDefaultInstance().where(PostItem.class).equalTo("id",id).findFirst();
     }

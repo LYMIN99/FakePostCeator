@@ -63,24 +63,14 @@ public class FacebookPostActivity extends BaseActivity {
                 finish();
             }
         });
-        binding.btnCreate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isValidate()){
-                    int id = new Random().nextInt(999);
-                    create(id);
-                    startActivity(new Intent(FacebookPostActivity.this,ReviewFacebookPostActivity.class).putExtra("id",id));
-                }
+        binding.btnCreate.setOnClickListener(view -> {
+            if (isValidate()){
+                int id = new Random().nextInt(999);
+                create(id);
+                startActivity(new Intent(FacebookPostActivity.this,ReviewFacebookPostActivity.class).putExtra("id",id));
             }
         });
-
-        binding.imageProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                checkPermissionOpenCamera();
-            }
-        });
-
+        binding.imageProfile.setOnClickListener(view -> checkPermissionOpenCamera());
         binding.tvDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

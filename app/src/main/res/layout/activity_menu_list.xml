@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.activities.MenuListActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_round_arrow_back_ios_24"
+            app:title="Create"
+            app:titleTextColor="@color/colorPrimary"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ln_facebook_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="@android:color/white"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook Post"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5"/>
+            <LinearLayout
+                android:id="@+id/ln_phone_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="@android:color/white"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Phone Call"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5"/>
+            <LinearLayout
+                android:id="@+id/ln_facebook_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="@android:color/white"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook Profile"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_sync_24"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5"/>
+            <LinearLayout
+                android:id="@+id/ln_facebook_messenger_call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="@android:color/white"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Facebook Messenger Call"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_sync_24"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5"/>
+            <LinearLayout
+                android:id="@+id/ln_instagram_post"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="@android:color/white"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:text="Instagram post"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_sync_24"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5"/>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

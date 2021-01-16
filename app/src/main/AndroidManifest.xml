@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".view.activities.create.IncomingPhoneCallActivity"></activity>
+        <activity android:name=".view.activities.create.InstaPostActivity" />
+        <activity android:name=".view.activities.create.IncomingPhoneCallActivity" />
         <activity
             android:name=".view.SplashScreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -29,7 +30,7 @@
         <activity android:name=".view.SavedActivity" />
         <activity android:name=".view.ReviewFacebookPostActivity" />
         <activity android:name=".view.FacebookPostActivity" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

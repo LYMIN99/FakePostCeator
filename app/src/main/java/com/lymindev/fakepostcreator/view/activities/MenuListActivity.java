@@ -19,6 +19,7 @@ import com.lymindev.fakepostcreator.R;
 import com.lymindev.fakepostcreator.databinding.ActivityMenuListBinding;
 import com.lymindev.fakepostcreator.view.activities.create.FbPostActivity;
 import com.lymindev.fakepostcreator.view.activities.create.IncomingPhoneCallActivity;
+import com.lymindev.fakepostcreator.view.activities.create.InstaPostActivity;
 
 public class MenuListActivity extends AppCompatActivity {
 
@@ -36,7 +37,7 @@ public class MenuListActivity extends AppCompatActivity {
 
         binding.lnFacebookPost.setOnClickListener(v -> startActivity(new Intent(MenuListActivity.this, FbPostActivity.class)));
         binding.lnFacebookMessengerCall.setOnClickListener(v -> Toast.makeText(getApplicationContext(),"Coming soon",Toast.LENGTH_SHORT).show());
-        binding.lnInstagramPost.setOnClickListener(v -> Toast.makeText(getApplicationContext(),"Coming soon",Toast.LENGTH_SHORT).show());
+        binding.lnInstagramPost.setOnClickListener(v ->  startActivity(new Intent(MenuListActivity.this, InstaPostActivity.class)));
         binding.lnFacebookProfile.setOnClickListener(v -> Toast.makeText(getApplicationContext(),"Coming soon",Toast.LENGTH_SHORT).show());
         binding.lnPhoneCall.setOnClickListener(v -> startActivity(new Intent(MenuListActivity.this, IncomingPhoneCallActivity.class)));
         binding.toolbar.setNavigationOnClickListener(v -> finish());

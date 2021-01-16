@@ -73,7 +73,7 @@ public class IncomingPhoneCallActivity extends BaseActivity {
                 });
         binding.btnReject.setOnClickListener(v -> finish());
         binding.tvName.setOnClickListener(v -> new SetValueBottomSheet(IncomingPhoneCallActivity.this, binding.tvName.getText().toString(), s -> binding.tvName.setText(s)));
-        binding.tvMib.setOnClickListener(v -> new SetValueBottomSheet(IncomingPhoneCallActivity.this, binding.tvName.getText().toString(), s -> binding.tvMib.setText(s)));
+        binding.tvMib.setOnClickListener(v -> new SetValueBottomSheet(IncomingPhoneCallActivity.this, binding.tvMib.getText().toString(), s -> binding.tvMib.setText(s)));
     }
     private void checkPermissionOpenCamera(int reqCode) {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){

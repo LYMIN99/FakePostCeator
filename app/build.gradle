@@ -3,14 +3,14 @@ apply plugin: 'realm-android'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.lymindev.fakepostcreator"
         minSdkVersion 23
         targetSdkVersion 30
-        versionCode 5
-        versionName "1.5"
+        versionCode 7
+        versionName "1.7"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
